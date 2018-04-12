@@ -21,4 +21,5 @@ alias dkrma='docker rm $(docker ps -a -q)'
 alias dkrmi='docker rmi'
 alias dkrmac='docker rm $(docker ps -a -q)'  # Delete all Docker containers
 alias dkrmui='docker images -q -f dangling=true | xargs -r docker rmi'  # Delete all untagged Docker images
+alias dkstats='docker stats $(docker ps --format={{.Names}})'
 ```
