@@ -2,9 +2,9 @@
 
 ```bash
 alias ..='cd ..'
-alias ll='ls -lh'
-alias lla='ls -lah'
-alias llr='ls -lRh'
+alias ll='ls -lh --group-directories-first'
+alias lla='ll -a'
+alias llr='ll -R'
 alias sn='sudo nano'
 alias sht='sudo htop'
 
